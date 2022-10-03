@@ -1,3 +1,4 @@
+console.log ("LOL")
 const grey = "\x1b[30m"; const red = "\x1b[31m"; const def = "\x1b[33m"
 console.log("\x1b[32m"); console.log("ARRAYS \x1b[33m")
 let favHolidayDestinations =
