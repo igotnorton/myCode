@@ -68,7 +68,7 @@ drink: [
 {name: "milk shake", price: 2.5, qty: 4},
 ],
 food: [
-{name: "hot dog", price: 1.5, qty: 0},
+{name: "hot dog", price: 1.5, qty: 10},
 {name: "side salad", price: 2, qty: 5},
 {name: "hamburger", price: 2.5, qty: 4},
 {name: "pizza", price: 3, qty: 5},
