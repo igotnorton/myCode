@@ -90,7 +90,7 @@ let latteTotalCost = (this.drink[2].price*this.drink[2].qty)
 let milkTotalCost = (this.drink[3].price*this.drink[3].qty)
 let allDrink = (waterTotalCost+cokeTotalCost+latteTotalCost+milkTotalCost)
 drinkTotal.push(`The total cost of the drink(s) is £${allDrink}.`)
-{return `Your drinks order: ${drinkList.join(', ')}. \n${drinkTotal.join(', ')} \n`; }
+{return `Your drink(s) order: ${drinkList.join(', ')}. \n${drinkTotal.join(', ')} \n`; }
 },
 foodOrdered(){
 let foodTotal = []
