@@ -119,14 +119,19 @@ const storeMovieList = [];
 
 
 class Rental {
-constructor (storeName,storeAddress,storeTelephone) {
-this.storeName = storeName;
-this.storeAddress = storeAddress;
-this.storeTelephone = storeTelephone;
+constructor () {
+this.storeName = "Blockbuster";
+this.storeAddress = "136 Anderson St, Dorchester, DT2 7AZ";
+this.storeTelephone = "07712345678";
 }
 get storeInfo() {
 return `Welcome to ${this.storeName}. Our address is: ${this.storeAddress}. If you have any questions, feel free to call us at ${this.storeTelephone}.`
 }}
+
+console.log('')
+const test1 = new Rental
+console.log(test1.storeInfo)
+console.log('')
 
 class Movies extends Rental {
 constructor(storeMovie, storeMoviePrice,storeName,storeAddress,storeTelephone) {
@@ -162,11 +167,73 @@ new Movies('The Lion King', '£4')
 new Movies('Titanic', '£2')
 new Movies('Top Gun: Maverick', '£3')
 
-console.log('')
-const test1 = new Rental("Blockbuster", "136 Anderson St, Dorchester, DT2 7AZ", "07712345678");
-console.log(test1.storeInfo)
-console.log('')
-
 console.log("List of movies for rent and their prices:")
 Movies.GetRentals();
+
+// console.log(storeMovieList)
+
+console.log("\x1b[32m"); console.log("OBJECT ORIENTED PROGRAMING - STRETCH ACTIVITY \x1b[33m")
+
 console.log('\x1b[0m')
+
+class CyberPet{
+constructor(name,mood,hunger,hygiene,alive) {
+this.name = name;
+this.mood = mood;
+this.hunger = hunger;
+this.hygiene = hygiene;
+this.alive = alive;
+}
+
+get stats() {
+return `name: ${this.name} mood: ${this.mood} hunger: ${this.hunger} hygiene: ${this.hygiene} alive: ${this.alive}\n`
+}
+playWithDragon () {
+
+if (dragon.hunger <= 0) {
+dragon.alive = false;
+dragon.mood = 0;
+dragon.hygiene = 0;
+console.log(`The ${this.name} is dead.`) }
+
+else if (dragon.mood >= 100) {
+console.log(`The ${this.name} does not want to play right now.`) }
+
+else if (dragon.hunger >= 1 && dragon.hunger <= 20) {
+dragon.alive = false;
+dragon.mood = 0;
+dragon.hunger = 0;
+dragon.hygiene = 0;
+console.log(`The ${this.name} died while playing.`) }
+
+else {
+dragon.mood += 20;
+dragon.hunger -=20;
+dragon.hygiene -= 20;
+console.log(`The ${this.name} is playing now.`) }
+
+
+
+}
+}
+
+
+const dragon = new CyberPet("dragon",50,50,50,true);
+
+console.log(dragon.stats)
+
+dragon.playWithDragon()
+
+console.log(dragon.stats)
+
+dragon.playWithDragon()
+
+console.log(dragon.stats)
+
+dragon.playWithDragon()
+
+console.log(dragon.stats)
+
+dragon.playWithDragon()
+
+console.log(dragon.stats)
