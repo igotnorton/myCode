@@ -5,42 +5,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible"="IE=edge">
     <meta name="viewport"="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    <title>Homepage</title>
   </head>
 
 <body>
   <div id="header">
     <div id="header-left">
-      <div id="header-left-up">
-        Kamil Oleskiewicz
+      <div id="header-logo">
+        <img src="./images/logo-ko.svg">
       </div>
-      <div id="header-left-down">
-        My Portfolio
-      </div>
+      <div id="header-space"></div>
+      <div id="header-text">
+        <div>Kamil Oleskiewicz</div><div id="header-down">My Portfolio</div>
     </div>
+  </div>
     <div id="header-right">
-      <a id="top-tab" href="index.html" title="Home">Home</a>
-      <a id="top-tab-pressed" href="aboutme.html" title="About Me">About Me</a>
-      <a id="top-tab" href="contactpage.html" title="Contact Me">Contact</a>
+      <a id="top-tab" href="index.html" title="Home">
+        <div id="top-tab-icon"><img src="./images/icon-home-off.svg" alt="Home Icon"></div>
+        <div id="top-tab-text">Home</div>
+      </a>
+      <a id="top-tab-active" href="aboutme.html" title="About me">
+        <div id="top-tab-icon"><img src="./images/icon-aboutme.svg" alt="About me Icon"></div>
+        <div id="top-tab-text">About me</div>
+      </a>
+      <a id="top-tab" href="resume.html" title="Resume">
+        <div id="top-tab-icon"><img src="./images/icon-resume-off.svg" alt="Resume Icon"></div>
+        <div id="top-tab-text">Resume</div>
+      </a>
     </div>
   </div>
   <div id="bg">
-    <div id="txt-large">About Me</div>
-      <div id="mid-content">
-        <div id="mid-row-1">
-          <div id="mid-center-txt-1">
-          </div>
-          <div id="mid-center-img-1">
-          </div>
+    <div id="txt-large">About me</div>
+    <div id="mid-content2">
+<div id="gal-1">
+      <div id="row">
+        <div id="column">
+          <img src="./images/img_Landscape.jpg" alt="Landscape" onclick="myFunction(this);">
         </div>
-        <div id="mid-row-1">
-          <div id="mid-center-img-1">
-          </div>
-          <div id="mid-center-txt-1">
-          </div>
+        <div id="column">
+          <img src="./images/img_Smartpen.jpg" alt="Smartpen" onclick="myFunction(this);">
+        </div>
+        <div id="column">
+          <img src="./images/img_Workshop.jpg" alt="Workshop" onclick="myFunction(this);">
+        </div>
+        <div id="column">
+          <img src="./images/img_Album.jpg" alt="Album" onclick="myFunction(this);">
         </div>
       </div>
+    </div>
+    <div id="gal2">
+
+      <div id="container">
+        <img id="expandedImg">
+        <div id="imgtext"></div>
+      </div>
+    </div>
+    </div>
+
   </div>
-  <div id="foot">footer</div>
+  <div id="foot">Website designed and made by Kamil Oleskiewicz.<br>Email: kamiloleskiewicz@gmail.com</div>
+  <script>
+    function myFunction(imgs) {
+      var expandImg = document.getElementById("expandedImg");
+      var imgText = document.getElementById("imgtext");
+      expandImg.src = imgs.src;
+      imgText.innerHTML = imgs.alt;
+      expandImg.parentElement.style.display = "block";
+    }
+    </script>
+
 </body>
 </html>

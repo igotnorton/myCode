@@ -10,4 +10,3 @@ if (input.value != "") {image.scr = input.value;}
 });
 
 
-
