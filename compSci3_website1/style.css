@@ -385,9 +385,9 @@ left: 0px;;
 left: 16px
 }
 
-#gal-2 {{
+#gal-2 {
   width: 75;
-}}
+}
 
 
 @media screen and (max-width: 600px) {
