@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "todo": "Sample data 1",
+    "complete": false
+  },
+  { 
+    "id": 2,
+    "todo": "Sample data 2",
+    "complete": true
+  },
+  {
+    "id": 3,
+    "todo": "Sample data 3",
+    "complete": false
+  }
+]

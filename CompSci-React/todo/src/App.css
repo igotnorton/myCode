@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+
+.completed {
+  /* text-decoration: line-through; */
+  color: #f00;
+  font-weight: bold;
+}
+
+/* .in-progress {
+  color: #00f;
+  font-weight: bold;
+} */

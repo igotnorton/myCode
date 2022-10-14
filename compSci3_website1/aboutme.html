@@ -37,42 +37,42 @@
   <div id="bg">
     <div id="txt-large">About me</div>
     <div id="mid-content2">
-<div id="gal-1">
-      <div id="row">
-        <div id="column">
-          <img src="./images/img_Landscape.jpg" alt="Landscape" onclick="myFunction(this);">
-        </div>
-        <div id="column">
-          <img src="./images/img_Smartpen.jpg" alt="Smartpen" onclick="myFunction(this);">
-        </div>
-        <div id="column">
-          <img src="./images/img_Workshop.jpg" alt="Workshop" onclick="myFunction(this);">
-        </div>
-        <div id="column">
-          <img src="./images/img_Album.jpg" alt="Album" onclick="myFunction(this);">
-        </div>
-      </div>
-    </div>
-    <div id="gal-2">
 
-      <div id="container">
-        <img id="expandedImg">
-        <div id="imgtext"></div>
-      </div>
-      </div>
-    </div>
+      <div id="ig">
+        <div id="ig-1-column">
+          <div id="ig-1-cell">
+            <img src="./images/img_Landscape.jpg" alt="Landscape" onclick="myFunction(this);">
+          </div>
+          <div id="ig-1-cell">
+            <img src="./images/img_Smartpen.jpg" alt="Smartpen" onclick="myFunction(this);">
+          </div>
+          <div id="ig-1-cell">
+            <img src="./images/img_Workshop.jpg" alt="Workshop" onclick="myFunction(this);">
+          </div>
+          <div id="ig-1-cell">
+            <img src="./images/img_Album.jpg" alt="Album" onclick="myFunction(this);">
+          </div>
+        </div>
 
+        <div id="ig-2-column">
+          <img id="ig-2-preview" src="./images/img_Landscape.jpg" alt="Landscape">
+          <div id="ig-2-name">Landscape</div>
+        </div>
+      </div>
+
+    </div>
   </div>
   <div id="foot">Website designed and made by Kamil Oleskiewicz.<br>Email: kamiloleskiewicz@gmail.com</div>
+
   <script>
     function myFunction(imgs) {
-      var expandImg = document.getElementById("expandedImg");
-      var imgText = document.getElementById("imgtext");
+      var expandImg = document.getElementById("ig-2-preview");
+      var imgText = document.getElementById("ig-2-name");
       expandImg.src = imgs.src;
       imgText.innerHTML = imgs.alt;
-      expandImg.parentElement.style.display = "block";
+      // expandImg.parentElement.style.display = "block";
     }
-    </script>
+  </script>
 
 </body>
 </html>
