@@ -100,10 +100,21 @@ header {
   background-color: #fff;
 }
 
+#text-0 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top:8px;
+  width: 100%;
+  font-size: 21px;
+}
+
 
 #text-1 {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   height: 48px;
   width: 100%;
   font-size: 24px;
@@ -123,7 +134,7 @@ header {
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  /* text-align: justify; */
+  text-align: center;
   font-size: 18px;
 
 }

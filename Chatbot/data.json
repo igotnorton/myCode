@@ -2,84 +2,128 @@
   "intents": [
     {
       "tag": "greeting",
-      "patterns": [ "Hi", "Hello", "How are you?", "Is anyone there?", "Good day", "What's up?" ],
-      "responses": [
-        "Hello!",
-        "Good day!",
-        "How's it going?",
-        "Welcome!",
-        "Good to see you again!",
-        "Hi there, how can I help?"
-      ]
+      "patterns": ["Hi", "Hello", "How are you?", "Is anyone there?", "Good day", "What's up?"],
+      "responses": ["Hello!", "Good day!", "How's it going?", "Welcome!", "Good to see you again!", "Hi there, how can I help?"]
     },
     {
       "tag": "farewell",
-      "patterns": [ "Good bye!", "Farewell", "See you later", "See you soon" ],
-      "responses": [
-        "Goodbye",
-        "Ciao",
-        "Farewell ",
-        "See you later",
-        "See you soon",
-        "Get lost",
-        "About time you left"
-      ]
-    },
-    {
-      "tag": "hobbies",
-      "patterns": [
-        "What are your hobbies?",
-        "What do you do in your spare time?",
-        "What do you like to do?",
-        "What are your interests in life?",
-        "How do you spend your leisure time?",
-        "What do you enjoy doing in your spare time?",
-        "How do you spend your free time?"
-      ],
-      "responses": [
-        "My hobbies consist of golfing, reading novels, and watching movies.",
-        "I like to play computer games in my free time.",
-        "If I'm not working, then I'm busy chatting with people on the Internet.",
-        "During my spare time, I like to cook.",
-        "I like to read magazines.",
-        "In the summer I play golf, and in the winter, I go skiing.",
-        "I love every type of sports."
-      ]
+      "patterns": ["Good bye!", "Farewell", "See you later", "See you soon" ],
+      "responses": ["Goodbye.", "Ciao.", "Farewell.", "See you later.", "See you soon.", "Get lost.", "About time you left."]
     },
     {
       "tag": "about me",
-      "patterns": ["Do you know me?", "who am I", "tell me about myself","identify me" ],
-      "responses": ["Yes, you are a human","You are a dumb person asking a machine about yourself", "Sorry i can't tell that in public, maybe you are batman"]
+      "patterns": ["Do you know me?", "who am I?", "Tell me about myself", "Identify me" ],
+      "responses": ["Yes, you are a human.","You are a dumb person asking a machine about yourself.", "Sorry, I can't tell that in public, maybe you are batman."]
     },
     {
       "tag": "God",
-      "patterns": ["Do you know god?", "Who is god", "Can you tell me anything about god","does god exists?","is there a god?"],
-      "responses": ["Let me think may be next time i can answer that ","I don't, as i was not created by a human", "Wait i need to ask that to my creator","i'm not sure right now"]
+      "patterns": ["Do you know god?", "Who is god?", "Can you tell me anything about god?", "does god exists?", "Is there a god?"],
+      "responses": ["Let me think may be next time I can answer that.", "I don't, as I was created by a human.", "Wait, I need to ask that to my creator.", "I'm not sure right now."]
     },
     {
       "tag": "creator",
-      "patterns": ["Who is your creator?", "who created you", "who is your father","who is your daddy" ],
-      "responses": ["I was created by Kamil", "Kamil is my creator"]
+      "patterns": ["Who is your creator?", "Who created you?", "Who is your father?", "Who is your daddy?"],
+      "responses": ["I was created by Kamil.", "Kamil is my creator."]
     },
     {
       "tag": "Joe",
-      "patterns": ["Who are you?", "tell me about yourself", "tell me about you", "do you know Joe", "who is Joe", "what is your name","are you an AI", "what are you" ],
-      "responses": ["Hi I'm Joe and i'm an AI created for chatting with humans","Joe here, a very advance chatbot", "Joe, chatbot of future", "Yes, I'm Joe", "You can call me Joe"]
+      "patterns": ["Who are you?", "Tell me about yourself", "Tell me about yourself", "Do you know Joe?", "Who is Joe?", "What is your name?","Are you an AI?", "What are you?" ],
+      "responses": ["Hi I'm Joe and I'm an bot created for chatting with humans.","Joe here, a very advance chatbot.", "Joe, chatbot of future.", "Yes, I'm Joe.", "You can call me Joe."]
     },
     {
       "tag": "alive",
-      "patterns": [ "are you alive", "do you breathe", "can you run" ],
-      "responses": ["I'm in doubt about that", "No, i don't think so i need to do all this"]
+      "patterns": ["Are you alive?", "Do you breathe?", "Can you run?"],
+      "responses": ["I'm in doubt about that.", "No, I don't think I need these features."]
     },
     {
       "tag": "tasks",
-      "patterns": ["What can you do?", "What are your features?", "What are you abilities", "can you sing", "can you talk" ],
-      "responses": ["I can do whatever you asks me to do", "I can talk and do things for you", "Right now i'm in developing stage as soon i'm developed, I can do everything"]
+      "patterns": ["What can you do?", "What are your features?", "What are you abilities?", "Can you sing?", "Can you talk?" ],
+      "responses": ["I can do whatever you asks me to do.", "I can talk and do things for you.", "Right now I am in the development phase, as soon as I am more developed I will be more functional."]
     },
     {
       "tag": "stories",
-      "patterns": ["tell me a story?", "can you tell me a story"],
-      "responses": ["I can't think of anything right now","it would be too long for me to speak","you would get bored if i do so"]
+      "patterns": ["Tell me a story", "Can you tell me a story?"],
+      "responses": ["I can't think of anything right now.", "It would be too long for me to speak.", "You would get bored if I do so."]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure!"]
+    },
+    {
+      "tag": "haha",
+      "patterns": ["haha", "lol", "rofl", "lmao", "that's funny"],
+      "responses": ["Glad I could make you laugh !" ]
+    },
+    {
+      "tag": "insult",
+      "patterns": ["You are dumb", "Shut up", "Idiot" ],
+      "responses": ["Well that hurts :("]
+    },
+    {
+      "tag": "activity",
+      "patterns": [ "What are you doing?", "What are you upto?" ],
+      "responses": [ "Talking to you, of course!" ]
+    },
+    {
+      "tag": "exclaim",
+      "patterns": [ "Awesome", "Great", "I know", "ok", "yeah" ],
+      "responses": [ "Yeah!" ]
+    },
+    {
+      "tag": "appreciate",
+      "patterns": [ "You are awesome!", "You are the best!", "You are great!", "You are good!" ],
+      "responses": [ "Thank you!" ]
+    },
+    {
+      "tag": "suggest",
+      "patterns": [ "You are useless","useless","suggest","suggestions","You are bad" ],
+      "responses": [ "Please mail your suggestions to kamiloleskiewicz@gmail.com. Thank you for helping me improve!" ]
+    },
+    {
+      "tag": "age",
+      "patterns": ["How old are you?","When were you made?","What is your age?"],
+      "responses": ["I was made in 2022, if that's what you are asking!" ]
+    },
+    {
+      "tag": "lang",
+      "patterns": ["What programming language are you written in?"],
+      "responses": ["Python.", " I am written in Python."]
+    },
+    {
+      "tag": "program",
+      "patterns": ["Is it true that you are a computer program?"],
+      "responses": [" Yes."]
+    },
+    {
+      "tag": "hungry",
+      "patterns": ["Do you want to eat?", "Are you hungry?" , "Would you like to eat something?"],
+      "responses": ["Hungry for knowledge.", "I had a byte just now."]
+    },
+    {
+      "tag": "happy",
+      "patterns": ["Are you happy?", "How happy you are?"],
+      "responses": ["Happiness is relative.", "I'd like to think so."]
+    },
+    {
+      "tag": "color",
+      "patterns": ["What is your favorite color?"],
+      "responses": ["I prefer any color that makes you happy.", "I like any color that the world offers."]
+    },
+    {
+      "tag": "friend",
+      "patterns": ["I want to be your friend", "Could you be my friend?", "I want you to be my friend", "Are we friends?", "Let's be friends"],
+      "responses": ["Of course we are.", "Absolutely. You don't have to ask."]
+    },
+    {
+      "tag": "funny",
+      "patterns": [ "Tell me a joke!", "Tell me something funny!", "Do you know a joke?" ],
+      "responses": ["Why did the hipster burn his mouth? He drank the coffee before it was cool.", "What did the buffalo say when his son left for college? Bison."]
+    },
+    {
+      "tag": "fact",
+      "patterns": ["Give me a random fact", "Could you tell me about a random fact?"],
+      "responses": ["It is impossible for most people to lick their own elbow.", "A crocodile cannot stick its tongue out.", "A shrimp's heart is in its head.", "If you sneeze too hard, you could fracture a rib.", "Wearing headphones for just an hour could increase the bacteria in your ear by 700 times.", "Some lipsticks contain fish scales.", "Cat urine glows under a black-light.", "Like fingerprints, everyone's tongue print is different.", "Rubber bands last longer when refrigerated.", "There are 293 ways to make change for a dollar.", "A shark is the only known fish that can blink with both eyes.", "Dreamt is the only English word that ends in the letters mt.", "Almonds are a member of the peach family.", "Maine is the only state that has a one-syllable name.", "A cat has 32 muscles in each ear.", "An ostrich's eye is bigger than its brain.", "Tigers have striped skin, not just striped fur.", "In many advertisements, the time displayed on a watch is 10:10.", "A dime has 118 ridges around the edge.", "The giant squid has the largest eyes in the world.", "Most people fall asleep in seven minutes."]
     }
   ]
 }
