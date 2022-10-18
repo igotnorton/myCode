@@ -1,0 +1,3 @@
+wordnet
+punkt
+owm-1.4
