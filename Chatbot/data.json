@@ -28,7 +28,7 @@
     {
       "tag": "Joe",
       "patterns": ["Who are you?", "Tell me about yourself", "Tell me about yourself", "Do you know Joe?", "Who is Joe?", "What is your name?","Are you an AI?", "What are you?" ],
-      "responses": ["Hi I'm Joe and I'm an bot created for chatting with humans.","Joe here, a very advance chatbot.", "Joe, chatbot of future.", "Yes, I'm Joe.", "You can call me Joe."]
+      "responses": ["Hi, I'm Joe and I'm an bot created for chatting with humans.","Joe here, a very advance chatbot.", "Joe, chatbot of future.", "Yes, I'm Joe.", "You can call me Joe."]
     },
     {
       "tag": "alive",

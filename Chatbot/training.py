@@ -26,9 +26,9 @@ for intent in intents['intents']:
         if intent['tag'] not in classes:
             classes.append(intent['tag'])
 
-
 words = [lemmatizer.lemmatize(word)
          for word in words if word not in ignore_letters]
+#  add extra cleaning process
 words = sorted(set(words))
 
 classes = sorted(set(classes))
@@ -73,3 +73,6 @@ history = model.fit(np.array(train_x), np.array(train_y), epochs=1000, batch_siz
 model.save('chatbot_model.model', history)
 
 print("DONE TRAINING THE MODEL!")
+
+# print(words)
+# print(documents)
