@@ -45,7 +45,7 @@ header {
   display:flex;
   justify-content: center;
   align-items: center;
-  width: 220px;
+  width: 215px;
   height: 47px;
   font-size: 24px;
   font-weight: bold;
@@ -64,7 +64,7 @@ header {
   align-items: center;
   margin: 0px -1px;
   height: 46px;;
-  width: 90px;
+  width: 115px;
   border-left: 1px solid #7f0000;
   border-right: 1px solid #7f0000;
   border-bottom: 3px solid rgba(255, 255, 255, 0);
@@ -109,9 +109,9 @@ header {
   animation-duration: 0.25s;
 }
 @keyframes grow {
-  0% { transform: scale(1); }
-  50% {transform: scale(1.1); }
-  100% {transform: scale(1); }
+  0% {opacity:0; transform: scale(1); }
+  50% {opacity:1; transform: scale(1.1); }
+  100% {opacity:1; transform: scale(1); }
 }
 
 
@@ -136,6 +136,11 @@ header {
   padding-top:8px;
   width: 100%;
   font-size: 21px;
+  font-weight: bold;
+  background: -webkit-linear-gradient(#f77, #b00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(1px 1px 1px #f00);
 }
 
 #text-1 {
@@ -184,6 +189,18 @@ header {
   animation-name: rotate;
   animation-duration: .5s;
 }
+
+#img-2 {
+  display: flex;
+  width: 100%;
+  max-width: 320px;
+  border-radius: 8px;
+}
+
+#img-2:hover {
+  animation-name: rotate;
+  animation-duration: .5s;
+}
 @keyframes rotate {
   0% { transform: rotate(0deg); }
   25% { transform: rotate(2deg); }
@@ -192,12 +209,7 @@ header {
   100% { transform: rotate(0deg); }
 }
 
-#img-2 {
-  display: flex;
-  width: 100%;
-  max-width: 320px;
-  border-radius: 8px;
-}
+
 
 #text-3 {
   display: flex;
@@ -248,5 +260,14 @@ form {
     }
 
 #top-icon {
-  padding-right:8px;
+  padding-right:4px;
+  filter: drop-shadow(0 0 2px #000);
+}
+
+
+@media screen and (max-width: 600px) {
+  #header-empty {
+    display: none;
+  }
+
 }

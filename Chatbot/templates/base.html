@@ -18,8 +18,14 @@
        <div id="icon-robot"><img src="../static/icon-robot.svg" alt="icon-robot" height="32px"></div>
        <div id="logo">ChatBot Web App</div>
        <div id="header-empty"></div>
-       <a id ="top-button" href="{{ url_for('home') }}" class="nav-link">Home</a>
-       <a id="top-button" href="{{ url_for('chatbot') }}" class="nav-link">ChatBot!</a>
+       <a id ="top-button" href="{{ url_for('home') }}" class="nav-link">
+        <div id="top-icon"><img src="../static/icon-home.svg" height="24px"></div>
+        Home
+      </a>
+       <a id="top-button" href="{{ url_for('chatbot') }}" class="nav-link">
+        <div id="top-icon"><img src="../static/icon-chat.svg" height="24px"></div>
+        ChatBot!
+      </a>
      </div>
    </header>
 
