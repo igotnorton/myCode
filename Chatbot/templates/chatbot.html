@@ -5,7 +5,7 @@
   <body class="text-center">
     
     {% block content %}
-
+<div>
 <div id="text-1">Chatbot!</div>
 
 <div id="text-2">
@@ -13,8 +13,9 @@
     <p> Applications that use the Flask framework include Pinterest,
       LinkedIn, and the community web page for Flask itself.</p>
     </div>
+    </div>
     <div id="mid-empty-2"></div>
-    <div id="img-container"><img id="img-2" src="../static/robot.png"></div>
+    <div id="img-container"><img id="img-2" src="../static/robot.png" height="170px"></div>
 <div id="mid-empty-2"></div>
     <div id="chatbox" class="card text-center">
         <div id="answerbox">
@@ -30,7 +31,7 @@
                 <div id="text-4">Chatbot says...</div>
                 
                 {% for answer in answer_list %}
-                <div id="text-0">{{answer}}</div>
+                <ul><li><div id="text-0">{{answer}}</div></li></ul>
                 {% endfor %}
             </div>
         </div>
@@ -38,3 +39,7 @@
     {% endblock %}
   </body>
 </html>
+
+
+<!-- <ul><li>{{answer}}</li></ul> -->
+<!-- <div id="text-0">{{answer}}</div> -->
