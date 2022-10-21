@@ -45,7 +45,7 @@ const webcamOutput = () => {
         }
         child.splice(0);
 
-    for (let x = 0; confidence.length; x++) {
+    for (let x = 0; x < confidence.length; x++) {
         if (confidence[x].score > 0.5) {
             const p = document.createElement('p');
             p.innerText = confidence[x].class  + ' - with ' 
