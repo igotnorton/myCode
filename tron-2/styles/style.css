@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+* {
+    font-family: 'Orbitron', sans-serif;
+    font-weight : bold;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+    /* overflow: hidden; */
+    height:100vh;
+    padding: 0;
+    margin: 0;
+
+
+}
+
+
+#title {
+    font-size: 48px;
+    color : #fff;
+    filter: drop-shadow(0 0 4px #000);
+    
+}
+
+#wall {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+width: 100%;
+height: 100%;
+    background: radial-gradient(#0000ff00, #0000ff00, #0000007f);
+
+}
+
+/* #wall2 {
+    display:block;
+    width:100vw;
+    height:100vh;
+background: url(../img/bg.png) ;
+animation: slide 1s  infinite;
+}
+
+@keyframes slide{
+    0% {
+        background-position : 0px 0px
+    }
+    100% {
+        background-position : 0px -808px
+    }
+  } */
+
+
+#container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+width: 100%;
+height: 100%;
+background: url(../img/bg.png) repeat;
+
+animation: scroll-anim 5s linear infinite;
+}
+
+
+
+
+@keyframes scroll-anim {
+100% {
+    background-position: -256px -256px;
+}
+}
+
+#tron {
+    background-image:
+    repeating-linear-gradient(rgba(0, 191, 255, 0.5) 0 2px, transparent 0 100%),
+    repeating-linear-gradient(90deg, rgba(0, 191, 255, 0.5) 0 2px, transparent 0 100%);
+    background-size: 16px 16px;
+    background-position: -1px -1px;
+
+    filter: drop-shadow(0 0 4px #fff);
+    backdrop-filter: blur(2px);
+    outline: 2px solid #fff;
+    outline-offset: 0px;
+    box-shadow: 0px 0px 4px 4px #000;
+}
+
+#blur {
+    display: flex;
+    background-image:
+    repeating-linear-gradient(#0000007f 0 4px, transparent 0 100%),
+    repeating-linear-gradient(90deg, #0000007f  0 4px, transparent 0 100%);
+    background-size: 16px 16px;
+    background-position: -2px -2px;
+    
+}
+
+#bg {
+    background: radial-gradient(#002f3f, #005f7f, #000);
+    margin-top: 8px;
+    margin-bottom: 8px;
+
+
+}
+
+
+
+
+div2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: slide 0.5s;
+    position: static;
+    filter: drop-shadow(0px 0px 4px #00ffffff);
+    
+    backdrop-filter: blur(2px);
+  }
+
+  @keyframes slide {
+    0% {opacity: 0;margin-top: 100px}
+
+    100% {opacity: 1;margin-top: 0px}
+  }
+
+
+h1 {
+    filter: drop-shadow(0px 0px 2px #000);
+    padding-bottom: 16px;
+}
+
+
+#controls{
+    display: flex;
+     justify-content: center;
+    font-size: 16px;
+    width: 128px;
+    border : 1px solid #00ffffff;
+    background : #005f7fff;
+    color : #00ffffff;
+    border-radius : 4px;
+}
+
+#controls:hover{
+    border : 1px solid #00ffffff;
+    background : #00ffffff;
+    color : #000;
+}
+
+#controls:active{
+    border : 1px solid #00ffffff;
+    background : #00bfbfff;
+    color : #000;
+}
+
+#Window {
+    display: flex;
+    visibility: hidden;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+z-index: 1;
+width: 100%;
+height: 100%;
+background: #0000007f;
+}
+
+#controlsWindow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background : #005f7fff;
+width: 384px;
+height: 384px;
+
+filter: drop-shadow(0px 0px 4px #00ffffff);
+backdrop-filter: blur(2px);
+
+background: #0000003f;
+border: 2px solid #00ffffff;
+border-radius:  8px;
+color: #fff;
+
+}
