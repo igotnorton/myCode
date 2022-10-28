@@ -178,6 +178,7 @@ background: #0000007f;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     position: fixed;
     background : #005f7fff;
 width: 384px;
