@@ -248,63 +248,17 @@ let game = setInterval(draw, 100);
 
 function createResultsScreen() {
   const resultNode = document.createElement('div1');
-
   resultNode.id = 'result';
-  resultNode.style.position = 'fixed';
-  resultNode.style.display = 'flex';
-  resultNode.style.flexDirection = 'column';
-  resultNode.style.top = 0;
-
-  resultNode.style.width = '100%';
-  resultNode.style.height = '100%';
-  resultNode.style.justifyContent = 'center';
-  resultNode.style.alignItems = 'center';
-  resultNode.style.background = '#0000007f'
 
   const resultNodeBox = document.createElement("div2");
 
-  resultNodeBox.style.position = 'fixed';
-  resultNodeBox.style.display = 'flex';
-  resultNodeBox.style.flexDirection = 'column';
-
-  resultNodeBox.style.width = '384px';
-  resultNodeBox.style.height = '256px';
-  resultNodeBox.style.justifyContent = 'center';
-  resultNodeBox.style.alignItems = 'center';
-  resultNodeBox.style.background = '#0000003f';
-  resultNodeBox.style.border = '2px solid #00ffffff';
-  resultNodeBox.style.borderRadius = '8px';
-
   const resultText = document.createElement("h1");
   resultText.innerText = outcome;
-  resultText.style.display = 'flex';
-  resultText.style.fontFamily = 'Orbitron';
-  resultText.style.color = winnerColor;
   resultText.style.color = winnerColor;
 
   const replayButton = document.createElement("resetbutton");
-  replayButton.innerText = 'Replay (Enter)';
-  replayButton.style.display = 'flex';
-  replayButton.style.fontFamily = 'Orbitron';
-  replayButton.style.textTransform = 'uppercase';
-  replayButton.style.padding = '10px 30px';
-  replayButton.style.fontSize = '1.2rem';
-  replayButton.style.margin = '0 auto';
-  replayButton.style.cursor = 'pointer';
-  replayButton.style.border = '1px solid #00ffffff';
-  replayButton.style.background = '#005f7fff';
-  replayButton.style.color = '#00ffffff';
-  replayButton.style.borderRadius = '4px';
-  replayButton.style.fontWeight = 'bold';
+  replayButton.innerText = 'REPLAY (ENTER)';
 
- replayButton.onmouseover = () => {
-    replayButton.style.background = '#00ffffff';
-    replayButton.style.color = '#000000ff';
-  };
-  replayButton.onmouseout = () => {
-    replayButton.style.background = '#005f7fff';
-    replayButton.style.color = '#00ffffff';
-  };
   replayButton.onclick = () => {
     replayButton.style.background = '#00bfbfff';
     replayButton.style.color = '#000000ff';
@@ -354,8 +308,6 @@ function resetGame() {
     game = setInterval(draw, 100);
   };
 
-document.querySelector('#play-btn').addEventListener('click', () => {
-  document.querySelector('#play-btn').style.display = 'none';
-});
+
 
 
